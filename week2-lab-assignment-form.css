@@ -1,0 +1,115 @@
+
+header {
+    width: 100%;
+    min-height: 400px;
+}
+.main-image {
+    background-image: url("images/adoptapet.jpg");
+    height: 400px;
+    background-position:relative;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.main-header {
+    background-color: lightsteelblue;
+    width: auto;
+    margin: 1em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    opacity: 0.7;
+    }
+img[class="logo"] {
+    width: 6em;
+    margin-top: 10px;
+    margin-right: 100px;
+    }
+.main-menu {
+    margin-left: 50px;
+    font-weight: 300;
+}
+.main-header a {
+    padding: 60px;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+.main-header a:hover {
+    color:rgb(205, 0, 17)
+}
+.main-header a:active {
+    color: mediumorchid;
+}
+h2 {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #96ca27;
+}
+fieldset {
+    width: 50em;
+    height: 35em;
+}
+hr {
+    
+    display: inline-flex;
+    margin-left: 3.5em;
+    margin-top: 3em;
+    width: 38%;
+}
+#hr2 {
+    margin-left: 1.4em;
+}
+ 
+.or {
+    margin-left: 1.4em;
+}
+input {
+    width: 16em;
+    height: 3.4em;
+    border: 1px solid #999999;
+    display: inline;
+    margin-top: 2.4em;
+    margin-left: 3em;
+    font-size: larger;
+    border-radius: 1em;
+}
+button {
+    background-color:lightgray;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.4em;
+    border:none;
+    width: 14em;
+    height: 3em;
+    border-radius: 1em;
+    margin-left: 2.2em;
+}
+#login {
+    margin-top: 2em;
+    width: 31em;
+    background-color:#96ca27;
+}
+#or {
+    margin-left: 1em;
+    font-size: larger;
+}
+}
+fieldset {
+    background-color: olivedrab;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset h4 {
+    margin-left: 3.2em;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}

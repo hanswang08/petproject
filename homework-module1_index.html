@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <!-- <link rel="stylesheet" href="" -->
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="week2-lab-assignment.css">
+        <title> My First Web Page </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <div class="main-image">
+                <div class="main-header"> 
+                    <nav class="main-menu"> 
+                        <img class="logo" src="images/logo.png" alt="logo">
+                        <a href="homework-module1.html">Home</a>
+                        <a href="homework-module1_Donate.html">Donate</a>
+                        <a href="homework-module1_form.html">Log In/Sign Up</a>
+                    </nav> 
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>Adopt the Perfect Pet</h2>
+            <h3>from more than 17,000 anamal shelters&rescues</h3>
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>Adopt A Pet</legend>
+                    <input class="options" type="radio" name="Cat" value=""/>
+                    <label>Cat</label>
+                    <input class="options" type="radio" name="Dog" value=""/>
+                    <label>Dog</label>
+                    <input class="options" type="radio" name="Rabbit" value=""/>
+                    <label>Rabbit</label>
+                    <br><label class="zip">Enter Your Zip code</label>
+                    <input class="zipcode" size="10" type="text" name="text"><br>
+                    <br><label>Age</label>
+                    <select>
+                        <option>Any</option>
+                        <option>Puppy</option>
+                        <option>Young</option>
+                        <option>Adult</option>
+                        <option>Senior</option>
+                    </select>
+                    <label>Breed</label>
+                    <select>
+                        <option>Any</option>
+                        <option>Affenpinscher</option>
+                        <option>Afghan Hound</option>
+                        <option>Akita</option>
+                        <option>Other</option>
+                    </select><br>
+                    <br><button>Search</button><br>
+                </fieldset>
+            </form>
+            <h2>Featured Pets</h2>
+            <div class="featured-pets">
+
+        
+                <ul id="album" onclick="displayDescription()">
+                    <!-- <li class="pets">
+                        <img src="images/1.jpg" alt="lola">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/2.jpg" alt="zimbie">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/3.jpg" alt="mandy">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/4.jpg" alt="maya">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/5.jpg" alt="walter">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/6.jpg" alt="cosette">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/7.jpg" alt="togo">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/8.jpg" alt="belle">
+                        <span class="petsintro"></span>
+                    </li>
+                    <li class="pets">
+                        <img src="images/9.jpg" alt="larue"></li>
+                        <span class="petsintro"></span>
+                    <li class="pets">
+                        <img src="images/10.jpg" alt="pitbull">
+                        <span class="petsintro"></span>
+                    </li> -->
+                </ul>
+                <div id="displayDescription">
+                    <h2 id="title"></h2>
+                    <h2 id="imageDescription"></h2>
+                    <button onclick="ClickTOClose()" id="clickToClose"></button>
+                </div>
+            </div>
+            <p>If you need more information about adpoting a pet, pleast contact us:</p>
+            <h3>Phone:</h3>
+            <p>(800)ADOPTPET</p>
+            <h3>Email</h3>
+            <p>info@adoptapet.org</p>
+        </section>
+         <footer>
+            <div id="nondisclaimer">
+                <div class="social" >
+                        <a href="#" class="fa-facebook"></a>
+                        <a href="#" class="fa-instagram"></a>
+                        <a href="#" class="fa-twitter"></a>
+                </div>
+            </div>
+            <div id="disclaimer">
+                <p>&copy;Copyright 2020 GreatCliffs.com</p>
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+
+        <script>
+            var photos = [];
+            var fileNames = [];
+            var imageList = [];
+            var image;
+            // image.addEventListener("click", changeStyle)
+            var openList = "<li id='album'>";
+            var closeList = "</li>";
+            var introOpenList = "<figcaption class='petsintro'>";
+            var introCloseList = "</figcaption>";
+            var descriptionOpenList = "<span class='description' onclick='descriptionVisible()'>";
+            var descriptionCloseList = "</span>"
+            // var displayDescription = 
+            var petsIntro = [
+                'lola',
+                'zimbie',
+                'mandy',
+                'maya',
+                'walter',
+                'cosette',
+                'togo',
+                'belle',
+                'larue',
+                'pitbull', 
+            ];
+            var desOpenList = "<span>"
+            var description = [
+                'Description 1',
+                'Description 2',
+                'Description 3',
+                'Description 4',
+                'Description 5',
+                'Description 6',
+                'Description 7',
+                'Description 8',
+                'Description 9',
+                'Description 10', 
+            ];
+            var displayDescription = [
+                'displayDescription 1',
+                'displayDescription 2',
+                'displayDescription 3',
+                'displayDescription 4',
+                'displayDescription 5',
+                'displayDescription 6',
+                'displayDescription 7',
+                'displayDescription 8',
+                'displayDescription 9',
+                'displayDescription 10', 
+            ];
+            var span = [];
+
+            var photos = [];
+            for (var i=0; i<10; i++) {
+                fileNames.push(i+1)
+                photos.push("<img src='images/" + fileNames[i] + ".jpg' + alt='petsIntro'>")
+                description.push()
+                image = openList + photos[i] + descriptionOpenList + description[i] + descriptionCloseList + introOpenList + petsIntro[i] + introCloseList + displayDescription[i] + closeList
+                // <li id="album"><img src='images/1.jpg'><span class=description></span><figcaption class='petsintro'>lola</figcaption><div id="displayDescription"></div></li>
+                imageList.push(image);
+            }
+            document.getElementById("album").innerHTML = imageList.join(" ");
+            // function descriptionVisible() {
+            //     document.getElementById("displayDescription").style.visibility = "visible";
+            //     document.getElementById("title") = petsIntro[i];
+            //     document.getElementById("imageDescription") = displayDescription[i];
+            //     document.getElementById("clickToClose").innerHTML = "Click This To Close";
+            // }
+            // function clickToClose() {
+            //     document.getElementById("displayDescription").style.visibility = "hidden";
+            // }
+        </script>
+    </body>
+</html>

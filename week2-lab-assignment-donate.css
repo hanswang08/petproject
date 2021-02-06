@@ -1,0 +1,133 @@
+
+header {
+    width: 100%;
+    min-height: 400px;
+}
+.main-image {
+    background-image: url("images/adoptapet.jpg");
+    height: 400px;
+    background-position:relative;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.main-header {
+    background-color: lightsteelblue;
+    width: auto;
+    margin: 1em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    opacity: 0.7;
+    }
+img[class="logo"] {
+    width: 6em;
+    margin-top: 10px;
+    margin-right: 100px;
+    }
+.main-menu {
+    margin-left: 50px;
+    font-weight: 300;
+}
+.main-header a {
+    padding: 60px;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+.main-header a:hover {
+    color:rgb(205, 0, 17)
+}
+.main-header a:active {
+    color: mediumorchid;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+/*.hero-image { 
+    background-image: url("/images/pitbull.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: bottom;
+    height: 800px;
+    opacity: 20%;
+}*/
+h2 {
+    font-size: xx-large;
+    color: #96ca27;
+    margin: 2em;
+}
+form {
+    margin: 1em;
+}
+h4 {
+    width: 50%;
+}
+fieldset {
+    margin: 1em;
+    width: 70%;
+}
+legend {
+    color: #96ca27;
+    font-weight: bolder;
+
+}
+input {
+    display: inline;
+}
+.donate-blank {
+    margin-left: 0.4em;
+    height: 40px;
+    width: 340px;
+    border: solid 0.1em lightslategrey;
+    margin-top: 1px;
+    border-radius: 4px;
+    font-size: large;
+}
+
+.money {
+    height: 40px;
+    width: 80px;
+    font-size: 1.2em;
+    opacity: 0.8;
+    border: solid 0.1em lightslategrey;
+    border-radius: 4px;
+    margin: 0.2em;
+    
+}
+.frequency {
+    width: 170px;
+    height: 40px;
+    font-size: 1em;
+    border: solid 0.1em lightslategrey;
+    border-radius: 4px;
+    margin-inline: 0.2em;
+    border-radius: 4px;
+
+}
+.frequency :hover {
+    color: #3399ff;
+}
+.submit {
+    margin-top: 0.4em;
+    width: 345px;
+    height: 60px;
+    font-size: 1.4em;
+    background-color: skyblue;
+    border: solid 0.1em lightslategrey;
+    border-radius: 4px;
+    margin-inline: 0.2em;
+    border-radius: 4px;
+}
+.zipcode {
+    border: rgb(11, 25, 39);
+    border-radius: 5px;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}

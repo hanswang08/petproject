@@ -1,0 +1,148 @@
+
+header {
+    width: 100%;
+    min-height: 400px;
+}
+.main-image {
+    background-image: url("images/adoptapet.jpg");
+    height: 400px;
+    background-position:relative;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.main-header {
+    background-color: lightsteelblue;
+    width: auto;
+    margin: 1em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    opacity: 0.7;
+    }
+img[class="logo"] {
+    width: 6em;
+    margin-top: 10px;
+    margin-right: 100px;
+    }
+.main-menu {
+    margin-left: 50px;
+    font-weight: 300;
+}
+.main-header a {
+    padding: 60px;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+.main-header a:hover {
+    color:rgb(205, 0, 17)
+}
+.main-header a:active {
+    color: mediumorchid;
+}
+h2 {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #96ca27;
+}
+.featured-pets {
+    float: left;
+}
+#displayDescription {
+    width: 35em;
+    height: 15em;
+    background-color: #999999;
+    opacity: 0.2;
+    border-radius: 20px;
+    visibility: hidden;
+}
+#title {
+    color: white;
+    font-size: large;
+    text-align: left;
+}
+#imageDescription {
+    color: white;
+    text-align: left;
+}
+#clickToClose {
+    color: yellow;
+    opacity: 1;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+#album li {
+    list-style: none;
+    display: inline-table;
+    position: relative;
+}
+#album img {
+    margin: 4em 2em 0.2em 2em;
+    width: 250px;
+    height: 250px;
+}
+#album img:hover {
+    cursor: pointer;
+}
+.description {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    color: black;
+    opacity: 0.7;
+}
+
+#album {
+    text-align: center;
+    display: block;
+
+}
+span .petsintro {
+    text-align: left;
+}
+.input {
+    height: 25px;
+    border: 1px solid #999999;
+    display: inline;
+    margin-top: 10px;
+}
+button {
+    background-color: #3399ff;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1em;
+    border:none;
+    width: 80px;
+    border-radius: 4px;
+}
+
+.options {
+    color:midnightblue;
+    size: 50px;
+    font-size: xx-small;
+}
+.zip {
+    size: 500px;
+    
+}
+/* span {
+    margin-bottom: 50px; */
+}
+fieldset {
+    background-color: olivedrab;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zipcode {
+    border: rgb(11, 25, 39);
+    border-radius: 5px;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
